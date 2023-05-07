@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box" id="heading">
+        <h1> <%= toDay %></h1>
+    </div>
+
+    <div class="box">
+        <% for(let i=0;i< toDo.length;i++){ %>
+                <div class="item">
+                    <input type="checkbox" name="" id=""> <p><%= toDo[i] %> </p>
+                </div>
+            <% } %>
+
+                <form action="/" method="post" class="item">
+                    <input type="text" name="todoItem" id="" placeholder="New Item" autocomplete="off">
+                    <button type="submit" name="button">+</button>
+                </form>
+    </div>
+
+    <div id="footer">
+        <p>©️ www.gauravKumar.com</p>
+    </div>
+</body>
+
+</html>
